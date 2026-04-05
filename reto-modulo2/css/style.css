@@ -1,0 +1,111 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.app-container {
+  background-color: white;
+  width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.info {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.input-container {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+#input-tarea {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+#btn-agregar {
+  padding: 8px 15px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#btn-agregar:hover {
+  background-color: #218838;
+}
+
+.filtros {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 15px;
+}
+
+.filtro-btn {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.filtro-btn.activo {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+#lista-tareas {
+  list-style: none;
+  padding: 0;
+}
+
+.tarea-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.tarea-item.completada .tarea-nombre {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.tarea-nombre {
+  flex: 1;
+  margin-left: 10px;
+}
+
+.btn-eliminar {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 8px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.btn-eliminar:hover {
+  background-color: #c82333;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 20px;
+  color: #888;
+}
